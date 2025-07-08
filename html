@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirNavRadar Widget Rodapé</title>
+    <!-- Inclui Tailwind CSS para estilização moderna e responsiva -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a fonte Inter para todo o corpo do documento */
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Fundo verde chromakey */
+            background-color: #00FF00; /* Verde brilhante para chromakey */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Evita barras de rolagem */
+        }
+
+        /* Estilo para o contêiner principal da sobreposição */
+        .overlay-container {
+            position: absolute; /* Posiciona o contêiner absolutamente sobre o vídeo */
+            top: 0;
+            left: 0;
+            width: 100vw; /* Ocupa 100% da largura da viewport */
+            height: 100vh; /* Ocupa 100% da altura da viewport */
+            display: flex;
+            flex-direction: column; /* Organiza os filhos em coluna */
+            justify-content: flex-end; /* Empurra o conteúdo para a parte inferior */
+            align-items: stretch; /* Permite que os filhos se estiquem por toda a largura */
+            pointer-events: none; /* Permite cliques passarem para o conteúdo abaixo */
+            box-sizing: border-box; /* Inclui padding na largura/altura */
+        }
+
+        /* Estilo para o contêiner do iframe que ocupará toda a largura inferior */
+        .footer-iframe-wrapper {
+            width: 100%; /* Ocupa 100% da largura do pai */
+            background-color: transparent; /* Fundo transparente agora */
+            padding: 0; /* Removido padding para ocupar toda a "parede" */
+            box-shadow: none; /* Removido sombra para um visual mais limpo e sem "bloco" */
+            pointer-events: auto; /* Permite interações com o widget */
+            height: 250px; /* Altura ajustada para o widget com mapa */
+            display: flex; /* Torna o elemento e seu conteúdo visíveis */
+            justify-content: center; /* Centraliza horizontalmente o iframe dentro da barra */
+            align-items: center; /* Centraliza verticalmente o iframe dentro da barra */
+        }
+
+        /* Estilo para o iframe */
+        .footer-iframe-wrapper iframe {
+            width: 100%; /* Ocupa 100% da largura do seu contêiner */
+            height: 100%; /* Ocupa 100% da altura do seu contêiner */
+            border: none; /* Remove a borda padrão do iframe */
+            display: block; /* Remove espaço extra abaixo do iframe */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay-container">
+        <!-- Espaço flexível para empurrar o conteúdo para baixo -->
+        <div class="flex-grow"></div>
+
+        <!-- Barra do Iframe no Rodapé, ocupando toda a largura -->
+        <div class="footer-iframe-wrapper">
+            <!-- Iframe do AirNavRadar -->
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.airnavradar.com/live-widget/LPPT?type=news&map=true&small=true"></iframe>
+        </div>
+    </div>
+</body>
+</html>
