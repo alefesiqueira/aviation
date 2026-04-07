@@ -1,0 +1,3 @@
+## 2024-05-14 - Require title on iframes for a11y
+**Learning:** Iframes, especially those embedding complex widgets like maps or external third-party tools, present a barrier to screen reader users if they lack a descriptive `title` attribute. Without a `title`, a screen reader may just read "iframe" or the source URL, leaving the user without context of what the embedded content is.
+**Action:** Always include a clear, descriptive `title` attribute on `iframe` tags (e.g., `title="Mapa de rastreamento de voos ao vivo do AirNavRadar"`) to improve accessibility and provide context to assistive technologies.
