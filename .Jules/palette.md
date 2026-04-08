@@ -1,0 +1,3 @@
+## 2024-05-24 - Accessibility for embedded iframes
+**Learning:** Iframes that embed external widgets (like the AirNavRadar flight tracking map) lack context for screen readers if they don't have a descriptive `title` attribute. This is especially important for accessibility in the localized language (pt-BR in this case).
+**Action:** Always add a clear, descriptive `title` attribute to `iframe` elements, ensuring it's localized appropriately (e.g., `title="Mapa de rastreamento de voos ao vivo do AirNavRadar"`).
