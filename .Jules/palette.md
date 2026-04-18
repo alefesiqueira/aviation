@@ -1,0 +1,3 @@
+## 2024-04-18 - Iframe Accessibility and Modernization
+**Learning:** External widgets embedded via iframes are completely opaque to screen readers without a title attribute. Furthermore, deprecated iframe attributes (frameborder, scrolling) should be replaced with existing utility classes (e.g. Tailwind) to maintain strict UI guidelines without introducing custom CSS.
+**Action:** Always add a clear, localized `title` attribute to iframes, and use utility classes like `border-none` and `overflow-hidden` instead of legacy HTML attributes.
