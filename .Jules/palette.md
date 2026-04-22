@@ -1,0 +1,3 @@
+## 2024-05-24 - Accessibility upgrades on legacy widget integration
+**Learning:** External iframe widgets often contain legacy styling attributes (`frameborder`, `scrolling`, `marginwidth`, `marginheight`) that reduce accessibility and violate standard separation of concerns. Additionally, screen readers heavily rely on iframe `title` attributes (specifically properly localized ones, e.g., pt-BR) for navigational context on embedded apps.
+**Action:** When auditing or implementing an external widget integration, always replace legacy structural attributes with equivalent Tailwind CSS utility classes (`border-none`, `overflow-hidden`), and ensure a clear, descriptive `title` attribute matching the app's primary language is present.
