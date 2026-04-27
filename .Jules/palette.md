@@ -1,0 +1,3 @@
+## 2024-04-27 - Iframe Accessibility and Deprecated Attributes
+**Learning:** Iframes used for embedding external widgets (like AirNavRadar) require a descriptive `title` attribute in pt-BR for screen reader accessibility. Attributes like `frameborder`, `scrolling`, `marginheight`, and `marginwidth` are deprecated and should be replaced with existing CSS utility classes.
+**Action:** Always ensure embedded iframes have a semantic, descriptive `title`. Replace deprecated layout/border attributes on iframes with modern CSS classes (e.g., Tailwind's `border-none`, `overflow-hidden`) to maintain clean, accessible, and standards-compliant HTML.
