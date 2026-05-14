@@ -1,0 +1,3 @@
+## 2024-03-24 - Accessibility and Modernization for Iframes
+**Learning:** Iframes embedding external widgets must include a clear, descriptive `title` attribute for screen reader accessibility. Additionally, legacy attributes like `frameborder`, `scrolling`, `marginheight`, and `marginwidth` are deprecated in modern HTML and should be replaced with equivalent CSS utility classes (e.g., Tailwind's `border-none`, `overflow-hidden`).
+**Action:** When working with iframes, always ensure a localized `title` attribute is present and replace any deprecated attributes with modern styling classes without adding custom CSS if a utility-first framework like Tailwind is available.
