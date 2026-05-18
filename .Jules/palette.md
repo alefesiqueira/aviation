@@ -1,0 +1,3 @@
+## 2024-05-18 - Replacing deprecated iframe attributes with utility classes for better accessibility
+**Learning:** External widgets (like AirNavRadar map) often come with legacy HTML attributes (`frameborder="0"`, `scrolling="no"`) which are deprecated in modern HTML5. When improving these, it is critical to also add accessibility properties like `title` for screen readers, ensuring external content is correctly identified to assistive technology.
+**Action:** When updating iframe attributes in legacy widgets, always replace visual deprecated attributes with existing utility classes (e.g. Tailwind `border-none overflow-hidden`) and strictly include a descriptive `title` attribute matching the app's primary language.
