@@ -1,0 +1,3 @@
+## 2024-05-21 - Accessible Iframe with Utility Classes
+**Learning:** External widgets embedded via `iframe` must have descriptive, localized `title` attributes (e.g., pt-BR) for screen readers. Deprecated iframe presentation attributes (like `frameborder="0"`, `scrolling="no"`) should be replaced by equivalent, modern utility classes (e.g., `border-none`, `overflow-hidden`) using the existing design system (Tailwind).
+**Action:** When adding or auditing iframes, ensure a clear, translated `title` exists and use CSS utilities instead of legacy HTML attributes for styling constraints.
