@@ -1,0 +1,3 @@
+## 2024-05-25 - Improve accessibility of third-party widget iframes
+**Learning:** Third-party iframes (like widget maps) often come with missing descriptive `title` attributes (crucial for screen reader accessibility) and rely on deprecated HTML styling attributes (`frameborder`, `scrolling`, etc.).
+**Action:** When integrating external widgets, always inject a clear, descriptive `title` attribute in the primary language (e.g., pt-BR) and replace deprecated layout attributes with equivalent CSS utility classes (like Tailwind) for better accessibility and standards compliance.
