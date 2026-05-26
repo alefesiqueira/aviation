@@ -1,0 +1,3 @@
+## 2024-05-27 - Replace Deprecated Iframe Attributes & Add Accessible Titles
+**Learning:** Deprecated `iframe` attributes like `frameborder="0"`, `scrolling="no"`, `marginheight="0"`, and `marginwidth="0"` violate modern web standards and can cause layout inconsistencies. Furthermore, missing `title` attributes on `iframe` elements makes external widgets inaccessible to screen readers.
+**Action:** Always replace deprecated `iframe` layout attributes with equivalent CSS or framework utility classes (e.g. `border-none overflow-hidden` in Tailwind). Always ensure embedded third-party widgets (`iframes`) include a clear, descriptive `title` attribute in the user-facing language (e.g. `pt-BR` for this app).
