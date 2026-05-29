@@ -1,0 +1,3 @@
+## 2024-05-29 - [Modernizing iframes for A11y and Standard Compliance]
+**Learning:** External iframe widgets often come with legacy attributes like `frameborder`, `scrolling`, `marginwidth`, and `marginheight` which are deprecated in HTML5 and bad for maintainability. Additionally, they often lack a descriptive `title` attribute, creating a black box for screen readers in an otherwise simple structural component.
+**Action:** Always replace deprecated iframe layout attributes with their equivalent utility classes (like `border-none` and `overflow-hidden` in Tailwind) to keep styling centralized and standards-compliant, and ensure every `iframe` is explicitly annotated with a translated, descriptive `title`.
