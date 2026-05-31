@@ -1,0 +1,3 @@
+## 2024-05-31 - Iframe Accessibility and Styling
+**Learning:** Iframes require descriptive `title` attributes (e.g., in pt-BR for localized widgets) to be accessible to screen readers, and deprecated HTML iframe attributes like `frameborder="0"` and `scrolling="no"` should be modernized using framework utility classes (like Tailwind CSS `border-none` and `overflow-hidden`) instead of relying on outdated inline attributes or introducing custom CSS.
+**Action:** When working with iframes, always ensure a localized `title` attribute is present and replace deprecated HTML layout attributes with existing design system utility classes.
