@@ -1,0 +1,3 @@
+## 2024-06-16 - Iframe Accessibility
+**Learning:** Iframes embedding external widgets must include a clear, descriptive `title` attribute in pt-BR for screen reader accessibility. Deprecated attributes like `frameborder` should be replaced with styling classes like `class="border-none"` using the existing Tailwind framework, while content formatting attributes like `marginwidth`, `marginheight`, and `scrolling` should be preserved.
+**Action:** Always verify iframes have localized title attributes and prefer utility CSS classes over deprecated attributes when styling the iframe border.
