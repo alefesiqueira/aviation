@@ -1,0 +1,3 @@
+## 2024-03-24 - Iframe Screen Reader Accessibility
+**Learning:** Iframes embedding external widgets, like the AirNavRadar tracking map, must include a descriptive `title` attribute in the primary language (pt-BR) so screen readers can announce the content effectively. This is crucial for users relying on assistive technology to understand what the embedded content represents.
+**Action:** Always verify the presence of `title` attributes on `<iframe>` tags and ensure they are written in the appropriate language (e.g., pt-BR) matching the rest of the page.
