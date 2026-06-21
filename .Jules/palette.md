@@ -1,0 +1,3 @@
+## 2024-06-21 - Visual regressions with inner-document iframe attributes
+**Learning:** While attributes like `frameborder` can be safely replaced by CSS classes (like Tailwind's `border-none`), replacing inner-document formatting attributes on iframes (like `marginwidth`, `marginheight`, and `scrolling`) with external CSS utilities (like `m-0` or `overflow-hidden`) causes visual regressions.
+**Action:** When updating old HTML for accessibility and modern standards, leave iframe attributes that format the inner document intact and only replace styling attributes (like border or background) with CSS.
