@@ -1,0 +1,3 @@
+## 2024-06-26 - [Add title to iframes]
+**Learning:** Iframes embedding external widgets must include a clear, descriptive `title` attribute (e.g., in pt-BR for localized content) to ensure screen reader accessibility. Without it, users relying on assistive technologies have no context about the iframe's content.
+**Action:** Always verify that embedded iframes contain an appropriate `title` attribute matching the context and primary language of the application.
