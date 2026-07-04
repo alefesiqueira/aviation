@@ -1,0 +1,3 @@
+## 2024-05-15 - Iframe Accessibility
+**Learning:** Iframes embedding external widgets must include a descriptive `title` attribute to ensure screen readers can announce their purpose, as `frameborder` is deprecated and provides no accessibility value.
+**Action:** Always add a clear, localized `title` attribute (e.g., in pt-BR) when configuring iframes for external widgets, and use CSS classes like Tailwind's `border-none` instead of deprecated layout attributes.
