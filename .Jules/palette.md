@@ -1,0 +1,3 @@
+## 2024-07-09 - Iframe Accessibility
+**Learning:** Iframes embedding external widgets must include a clear, descriptive `title` attribute in pt-BR for screen reader accessibility. Without it, screen readers cannot properly convey the purpose or content of the embedded widget to users.
+**Action:** Always verify that `iframe` elements, especially those serving as external widgets (like the AirNavRadar widget), have a descriptive `title` attribute in the appropriate language (pt-BR in this context).
