@@ -1,0 +1,3 @@
+## 2024-03-21 - Replace deprecated attributes in widget iframes
+**Learning:** Iframes embedding external widgets must include a clear, descriptive `title` attribute for screen reader accessibility. Deprecated attributes like `frameborder` should be modernized with utility classes (e.g. Tailwind `border-none`) where applicable.
+**Action:** When working with iframes, always ensure a `title` attribute is present and check for deprecated HTML attributes to modernize with CSS.
