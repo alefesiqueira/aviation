@@ -1,0 +1,3 @@
+## 2024-05-18 - Preserving iframe formatting vs replacing deprecated attributes
+**Learning:** When updating legacy code, deprecated formatting attributes like `marginwidth` and `marginheight` in iframes must be preserved to avoid visual regressions, as external CSS utilities may not correctly target the inner document's formatting. However, border-related attributes like `frameborder="0"` can be safely and effectively replaced with modern CSS utility classes (e.g., `border-none` in Tailwind) alongside accessibility enhancements like `title`.
+**Action:** Always verify if a deprecated attribute governs the internal iframe layout or external presentation before replacing it with CSS. Preserve internal formatting attributes while modernizing borders and adding a11y labels.
